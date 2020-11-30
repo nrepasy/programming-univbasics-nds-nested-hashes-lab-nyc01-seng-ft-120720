@@ -67,7 +67,7 @@ local_copy_of_aoh = [
  {"name" => "Bruce Green",
  "occupation" => "Fan of Mildred"}
    ]
- result =  local_copy_of_aoh[1][0] 
+ result =  local_copy_of_aoh[1][:name] 
 
    
  

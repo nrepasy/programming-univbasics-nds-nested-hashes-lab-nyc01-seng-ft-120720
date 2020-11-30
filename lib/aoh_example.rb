@@ -7,7 +7,7 @@ KATE_G = { name:  "Kate Gompert", occupation: "None" }
 BRUCE_G = { name:  "Bruce Green", occupation: "Fan of Mildred" }
 
 def assembled_aoh
- result = [ 
+ [ 
    DON_G,
    JOELLE_VD,
    PAT_M,
@@ -20,7 +20,7 @@ def assembled_aoh
 end
 
 def literal_aoh
-   result = [
+   [
    {:name => "Don Gately",
    :occupation => "Live-in Staff"},
    {:name => "Joelle van Dyne",
@@ -38,35 +38,15 @@ def literal_aoh
 end
 
 def aoh_lookup(aoh, row, key)
-     result = [
-   {:name => "Don Gately",
-   :occupation => "Live-in Staff"},
-   {:name => "Joelle van Dyne",
-   :occupation => "Radio Personality"},
-   {:name => "Pat Monteseian", 
-   :occupation => "Staff"},
- {:name => "Kate Gompert",
- :occupation => "None"},
- {:name => "Bruce Green",
- :occupation => "Fan of Mildred"}
-   ]
-   result[2][:name]
+    
+   aoh[row][key]
 end
 
 def aoh_update(aoh, row, key, new_value)
-local_copy_of_aoh = [
-   {"name" => "Don Gately",
-   "occupation" => "Live-in Staff"},
-   {"name" => "Joelle van Dyne",
-   "occupation" => "Radio Personality"},
-   {"name"=> "Pat Monteseian", 
-   "occupation" => "Staff"},
- {"name" => "Kate Gompert",
- "occupation" => "None"},
- {"name" => "Bruce Green",
- "occupation" => "Fan of Mildred"}
-   ]
- result =  local_copy_of_aoh[1][0] 
+
+ 
+aoh[row][key] = new_value
+aoh
 
    
  

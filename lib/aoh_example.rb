@@ -54,6 +54,7 @@ def aoh_lookup(aoh, row, key)
 end
 
 def aoh_update(aoh, row, key, new_value)
+<<<<<<< HEAD
 local_copy_of_aoh = [
    {"name" => "Don Gately",
    "occupation" => "Live-in Staff"},
@@ -69,7 +70,17 @@ local_copy_of_aoh = [
  result =  local_copy_of_aoh[1][0] 
 
    
- 
+ def aoh_update(aoh, row, key, new_value)
+
+     local_copy_of_aoh = [ 
+   DON_G,
+   JOELLE_VD,
+   PAT_M,
+   KATE_G,
+   BRUCE_G
+   ]
+p local_copy_of_aoh[1][:name]
+
   # Update the AoH data at row and key to have the value of new_value
   # Return the updated AoH
 end
